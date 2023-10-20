@@ -16,6 +16,10 @@ interface NoteDao {
 
     @Query("SELECT * FROM Note")
     fun getNotes() : Flow<List<Note>>
+    /*
+    we have kept the func of return type Flow<List<Note>> because we wanted it to be asynchronous, so that
+    it does not block the main thread and can run in background.
+     */
 
     @Query("SELECT * FROM Note WHERE id = :id")
     suspend fun getNoteById(id: Int) : Note?

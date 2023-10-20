@@ -10,7 +10,7 @@ import com.example.noteskeeper.ui.theme.Violet
 
 /*
 I described the table structure.
- Table Strucutre ==>  id(col1) | title(col2) | content(col3) | timestamp(col4) | color(col5)
+ Table Structure ==>  id(col1) | title(col2) | content(col3) | timestamp(col4) | color(col5)
 */
 @Entity
 data class Note(
@@ -20,7 +20,13 @@ data class Note(
     val color: Int,
     @PrimaryKey val id: Int? = null
 ) {
-    // It is similar to static keyword in JAVA which means it will load as the class loads.
+    /*
+    The noteColors variable is declared inside the companion object because we want this variable to be
+    associated with the class and not to the instance of class.
+
+    It is similar to the static keyword in java which means that it will be relate to the class rather
+    than to the instance of a class.
+     */
     companion object {
         val noteColors = listOf(RedOrange, LightGreen, Violet, BabyBlue, RedPink)
     }
