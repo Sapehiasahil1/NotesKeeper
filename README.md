@@ -13,4 +13,4 @@ An android app built using Jetpack Compose that uses the Room Database to store 
 
 # Screenshots
 
-<img src="media_noteskeeper/add_note.jpg" width="250" /> <img src="media_noteskeeper/notes_screen.jpg" width="250" /> <img src="media_noteskeeper/sort_by.jpg" width="250" />
+ <img src="media_noteskeeper/notes_screen.jpg" width="250" /> <img src="media_noteskeeper/sort_by.jpg" width="250" /> <img src="media_noteskeeper/add_note.jpg" width="250" />
